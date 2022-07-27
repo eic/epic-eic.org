@@ -1,0 +1,159 @@
+/* ---------------------------- */
+/* BLOCKQUOTES */
+blockquote{
+    padding: .5em .5em .5em .75em;
+    color: #000;
+    background-color: #EEEEEE; /*  background: #FFEBCD; color: #8B4513; */
+    word-wrap: normal;
+    border-left: 0.5em solid #AAA;
+    border-right: 0.5em solid #AAA;
+    border-radius: 6px;
+}
+
+/*
+blockquote::before {
+  display: block;
+  height: 0;
+  content: "“";
+  margin-left: -.95em;
+  font: italic 400%/1 Open Serif,Georgia,"Times New Roman", serif;
+  color: #999;
+}
+*/
+
+/* for nested paragraphs in block quotes */
+blockquote p {
+  display: inline;
+}
+
+/* OTHER STUFF */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2, h3, h4, h5, hr, em {
+   color:coral;
+}
+
+/* h2[id^="t"], h2[id^="s"] {
+    color: red;  
+} */
+
+
+ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: coral;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #mynavlist li a {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    }
+
+    #grad1 {
+    height: 100%;
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, white , rgba(255, 127, 80, 0.466), white);
+    /* background-image:  radial-gradient(yellow 14%, coral 20%, transparent 65%); */
+    }
+
+/* ---------------------------- */
+/* TABLE */
+th {
+    text-align: center;
+    border: 1px solid coral;
+    color: #fff;
+    background-color: coral;
+    padding: 8px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid coral;
+    vertical-align: top;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: ghostwhite;}
+
+tr.bland {
+    background: none !important;
+}
+
+tr:hover {background-color: #ddd;}
+
+div.txt {
+    max-width: 90%;
+    text-overflow: ellipsis;
+    word-wrap: break-word;     
+}
+
+/* ---------------------------- */
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+      
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}

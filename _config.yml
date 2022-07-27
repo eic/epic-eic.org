@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+url: epic-eic.org
+baseurl: /
+collections:
+  content:
+    output: true
+    permalink: /content/:title.html

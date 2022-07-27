@@ -1,0 +1,43 @@
+<!doctype html>
+    <html lang="en">
+    {% include head.html %}
+    <body>
+
+        <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow" style="color:coral;">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{{ '/' | relative_url }}" style="background-color: coral;"><img src="{{ '/assets/images/logo/EIC-logo_2.png' | relative_url }}" height="31">&nbsp;&nbsp;&nbsp;&nbsp;EIC User Group</a>
+            <div class="navbar-nav float-left px-5">
+                <h2>{{ page.title }}</h2>
+            </div>
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- see "TOP BAR RIGHT" in attic.txt for previous content -->
+        </header>
+       
+        <div class="container-fluid">
+            <div class="row">
+                    {% include sidebar.html %}
+                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                        <div class="mx-auto d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                            <!--  border-bottom, add to above if a hr on the bottom is needed -->
+                            <div class="txt" style="text-align: justify; text-justify: inter-word;">
+                                {{ content }}
+                            </div>
+                        </div>
+                    </main>
+            </div>
+        
+
+        </div>
+    <!-- /div -->
+
+
+    <!-- JS instrumentation, placed at the end of the document so the pages load faster -->
+    
+    <script src="{{ '/assets/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+    <!-- Icons -->
+    <script src="{{ '/assets/feather/feather.min.js' | relative_url }}"></script>
+    <script>feather.replace()</script>
+    </body>
+    </html>
