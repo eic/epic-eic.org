@@ -1,4 +1,4 @@
-# EPIC Collaboration at the Electron-Ion Collider
+# ePIC Collaboration at the Electron-Ion Collider
 
 ## Quickstart for local builds
 
